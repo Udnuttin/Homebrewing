@@ -13,7 +13,7 @@
 
 /* The real font is Friz Quadrata Bold, but it is pricey and I couldn't find an open source version of it.  Below is a compromise font */
   
-  @import url('https://fonts.googleapis.com/css2?family=Expletus+Sans:ital,wght@0,700;1,700&display=swap');
+  @import url('https://raw.githack.com/Udnuttin/Homebrewing/main/AD&D%202nd%20Edition/Quad%20Fritz%20Bold.woff2);
   
 /*   Below are the ROOT variables that can be included in the Homebrewery editor to make some simple changes. 
 Note, there are nested css comments here, and if included in the brew, the space between / and * needs to be removed.
