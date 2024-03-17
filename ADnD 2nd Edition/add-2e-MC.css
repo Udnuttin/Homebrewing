@@ -1,6 +1,6 @@
 /* The real font is Friz Quadrata Bold, but it is pricey and I couldn't find an open source version of it.  Below is a compromise font */
   
-  @import url('https://fonts.googleapis.com/css2?family=Expletus+Sans:ital,wght@0,700;1,700&display=swap');
+/*  @import url('https://fonts.googleapis.com/css2?family=Expletus+Sans:ital,wght@0,700;1,700&display=swap'); */
   
   @font-face {
   font-family: 'Quad-Fritz-Bold';
@@ -33,13 +33,7 @@ Note, there are nested css comments here, and if included in the brew, the space
   }
 */
 
-/*
 
-█▀█ ▄▀█ █▀▀ █▀▀
-█▀▀ █▀█ █▄█ ██▄
-
-*/
-  
   
   .phb {
   	background:#fdfdfd;
@@ -53,7 +47,7 @@ Note, there are nested css comments here, and if included in the brew, the space
   }
   
   .phb:after {
-  	background-image:url('https://i.imgur.com/U5Cr0T4.png');
+  	background-image:url('https://imgur.com/ZRRHwDN.png');
   	left:15px;
   	right:unset;
   	bottom:unset;
