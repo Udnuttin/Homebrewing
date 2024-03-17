@@ -137,7 +137,10 @@ Note, there are nested css comments here, and if included in the brew, the space
   /*  IMAGES */
   
   .sticky:before {
-  	content:'';
+  	position:absolute;
+	right:0;
+	top:0;
+	content:'';
   	display:block;
   	float:right;
   }
