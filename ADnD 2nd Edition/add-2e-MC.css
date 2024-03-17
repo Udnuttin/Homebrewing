@@ -71,7 +71,7 @@ Note, there are nested css comments here, and if included in the brew, the space
 	
   }
   
-  /* COVER PAGE  */
+  /* COVER PAGE  
   
   .phb .cover ~ h1 {
   	border:none;
@@ -84,7 +84,7 @@ Note, there are nested css comments here, and if included in the brew, the space
   	border-radius:25px;
   	border:4px double white;
   }
-  
+  */
 
   
   /* TEXT */
