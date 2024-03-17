@@ -208,7 +208,7 @@ Note, there are nested css comments here, and if included in the brew, the space
   	content:'';
   	display:table-caption;
   	height:1px;
-  	background:#22ac93;
+  	background:#212121;
   	margin-bottom:2px;
   	margin-left:5px;
   	margin-right:0px;
@@ -222,7 +222,7 @@ Note, there are nested css comments here, and if included in the brew, the space
   	background:none;
   }
   
-  .phb .stats table tbody tr:nth-child(n+1):nth-child(-n+4) {
+  .phb .stats table tbody tr:nth-child(3):nth-child(4):nth-child(5) {
   	background:var(--table-row-color);
   }
   
