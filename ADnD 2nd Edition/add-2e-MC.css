@@ -139,8 +139,7 @@ Note, there are nested css comments here, and if included in the brew, the space
   .sticky:before {
   	content:'';
   	display:block;
-  	float:left;
-  	height:var(--position-px);
+  	float:right;
   }
   
   .main-image  .frame {
