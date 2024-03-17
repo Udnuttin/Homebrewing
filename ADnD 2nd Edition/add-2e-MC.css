@@ -2,6 +2,19 @@
   
   @import url('https://fonts.googleapis.com/css2?family=Expletus+Sans:ital,wght@0,700;1,700&display=swap');
   
+  @font-face {
+  font-family: 'Quad-Fritz-Bold';
+  src:url('https://raw.githack.com/Udnuttin/Homebrewing/main/ADnD%202nd%20Edition/Quad-Fritz-Bold.woff') format('woff'),
+        url('https://raw.githack.com/Udnuttin/Homebrewing/main/ADnD%202nd%20Edition/Quad-Fritz-Bold.woff2') format('woff2'),
+        url('https://raw.githack.com/Udnuttin/Homebrewing/main/ADnD%202nd%20Edition/Quad-Fritz-Bold.svg#Quad-Fritz-Bold') format('svg'),
+        url('https://raw.githack.com/Udnuttin/Homebrewing/main/ADnD%202nd%20Edition/Quad-Fritz-Bold.eot'),
+        url('https://raw.githack.com/Udnuttin/Homebrewing/main/ADnD%202nd%20Edition/Quad-Fritz-Bold.eot?#iefix') format('embedded-opentype'),
+        url('https://raw.githack.com/Udnuttin/Homebrewing/main/ADnD%202nd%20Edition/Quad-Fritz-Bold.ttf') format('truetype');
+
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 /*   Below are the ROOT variables that can be included in the Homebrewery editor to make some simple changes. 
 Note, there are nested css comments here, and if included in the brew, the space between / and * needs to be removed.
 
@@ -103,7 +116,7 @@ Note, there are nested css comments here, and if included in the brew, the space
   .phb h1 {
   	color:var(--main-color);
   	border-bottom:3px solid #212121;
-  	font-family:'Expletus Sans';
+  	font-family:'Quad-Fritz-Bold';
   	font-size:30px;
   	padding:3px;
   	margin: 0px 0px 35px 5px;
