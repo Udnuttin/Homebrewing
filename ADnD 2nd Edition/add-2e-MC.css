@@ -35,21 +35,21 @@ Note, there are nested css comments here, and if included in the brew, the space
 
 
   
-  .page {
+  .phb {
   	background:#fdfdfd;
   	column-gap:25px;
   	color:#212121;
-  	padding:20px 30px 50px 70px;
-  }
-  
-  .page:nth-of-type(2n) {
   	padding:20px 70px 50px 30px;
   }
   
-  .page:after {
-  	background-image:url('https://imgur.com/ZRRHwDN.png');
-  	left:15px;
-  	right:unset;
+  .phb:nth-of-type(2n) {
+  	padding:20px 30px 50px 70px;
+  }
+  
+  .phb:after {
+  	background-image:url('https://i.imgur.com/U5Cr0T4.png');
+  	left:unset;
+  	right:20px;
   	bottom:unset;
   	top:0;
   	width:50px;
@@ -59,10 +59,10 @@ Note, there are nested css comments here, and if included in the brew, the space
   	transform:scaleX(1);
   }
   
-  .page:nth-of-type(2n):after {
-  	left:unset;
-  	right:20px;
-  	transform:scaleX(-1);
+  .phb:nth-of-type(2n):after {
+  	left:15px;
+  	right:unset;
+  	transform:scaleX(1);
   }
   
   .flexbox {
@@ -71,22 +71,25 @@ Note, there are nested css comments here, and if included in the brew, the space
 	
   }
   
-   /* COVER PAGE  */
+  /* COVER PAGE  */
   
-  .page .cover ~ h1 {
-	border:none;
+  .phb .cover ~ h1 {
+  	border:none;
   	text-align:center;
-  	font-size:39px;
+  	font-size:40px;
   	color:white;
-  	width:75%;
+  	width:70%;
   	margin:auto auto;
-	border-bottom:none;
-	text-shadow: 0 0 27px var(--main-color);
+  	background:var(--main-color);
+  	border-radius:25px;
+  	border:4px double white;
   }
+  
 
+  
   /* TEXT */
   
-  .page p {
+  .phb p {
   	text-align:justify;
   	-webkit-column-break-inside:unset;
   	break-inside:unset;
@@ -94,27 +97,27 @@ Note, there are nested css comments here, and if included in the brew, the space
   	padding-bottom:.7em;
   }
   
-  .page p strong:first-child {
+  .phb p strong:first-child {
   	color:var(--main-color);
   	margin-right:.8em;
   }
   
   
-  .page h1 + p:first-letter {
+  .phb h1 + p:first-letter {
   	all:unset;
   }
   
-  .page h1 {
+  .phb h1 {
   	color:var(--main-color);
   	border-bottom:3px solid #212121;
-  	font-family:'Quad-Fritz-Bold';
+  	font-family:'Expletus Sans';
   	font-size:30px;
   	padding:3px;
   	margin: 0px 0px 35px 5px;
   	
   }
   
-  .page h1 + hr {
+  .phb h1 + hr {
   	visibility:visible;
   	column-span:all;
   	color:var(--main-color);
@@ -124,7 +127,7 @@ Note, there are nested css comments here, and if included in the brew, the space
   	margin-top:-20px;
   }
   
-  .page h2 {
+  .phb h2 {
   	font-size:1em;
   	font-family:'booksanity';
   	color:var(--main-color);
@@ -137,17 +140,15 @@ Note, there are nested css comments here, and if included in the brew, the space
   /*  IMAGES */
   
   .sticky:before {
-  	position:absolute;
-	content:'';
+  	content:'';
   	display:block;
-  	float:right;
+  	float:left;
+  	height:var(--position-px);
   }
   
   .main-image  .frame {
-  	position:absolute;
+  	position:relative;
   	overflow:hidden;
-	right:0;
-	top:0;
 	float:right;
   	width:100%;
   	height:300px;
@@ -163,35 +164,35 @@ Note, there are nested css comments here, and if included in the brew, the space
   
   /* TABLES */
   
-  .page table {
+  .phb table {
   	font-family:'booksanity';
   	font-size:1em;
   }
  
-  .page  table tbody tr:nth-child(odd) {
+  .phb  table tbody tr:nth-child(odd) {
   	background:none;
   
   }
   
-  .page table tbody td {
+  .phb table tbody td {
   	width:500px;
   }
   
-  .page table tbody tr:first-child td {
+  .phb table tbody tr:first-child td {
   	padding-top:0px;
   }
   
-  .page table thead th {
+  .phb table thead th {
   	padding:12px 5px 2px 5px;
   	text-transform:capitalize;
   }
   
-  .page table thead th:empty {
+  .phb table thead th:empty {
   	visiblity:hidden;
   	padding:2px 5px
   }
   
-  .page table tbody tr td {
+  .phb table tbody tr td {
 	padding: 1px 5px;
   }
  
@@ -199,10 +200,10 @@ Note, there are nested css comments here, and if included in the brew, the space
   /* Stats Table */
   
 	
-  .page .stats table {
+  .phb .stats table {
   }
   
-  .page .stats table + table:before {
+  .phb .stats table + table:before {
   	content:'';
   	display:table-caption;
   	height:1px;
@@ -212,36 +213,36 @@ Note, there are nested css comments here, and if included in the brew, the space
   	margin-right:0px;
   }
   
-  .page .stats table tbody tr:first-child td {
+  .phb .stats table tbody tr:first-child td {
 	padding-top: 6px;
   }
   
-  .page .stats table tbody tr:nth-child(2n+1) {
+  .phb .stats table tbody tr:nth-child(2n+1) {
   	background:none;
   }
   
-  .page .stats table tbody tr:nth-child(n+1):nth-child(-n+4) {
+  .phb .stats table tbody tr:nth-child(n+1):nth-child(-n+4) {
   	background:var(--table-row-color);
   }
   
-  .page .stats table:nth-of-type(2) tbody tr:nth-child(n+1):nth-child(-n+7) {
+  .phb .stats table:nth-of-type(2) tbody tr:nth-child(n+1):nth-child(-n+7) {
   	background:var(--table-row-color);
   }
   
-  .page .stats table tbody tr td:nth-of-type(1) {
+  .phb .stats table tbody tr td:nth-of-type(1) {
   	text-transform:uppercase;
   	font-weight:bold;
   	width:240px;
   }
   
-  .page .stats table tbody td:nth-of-type(1):after {
+  .phb .stats table tbody td:nth-of-type(1):after {
   	content:':'
   }
   
   
   /* Roll Tables */
   
-  .page .rolltable1 {
+  .phb .rolltable1 {
   	border-top:1px solid #212121;
   	border-bottom:1px solid #212121;
   	margin:2px 5px;
@@ -249,12 +250,12 @@ Note, there are nested css comments here, and if included in the brew, the space
   	flex:1 1;
   }
   
-  .page .rolltable1 h2 + table thead th {
+  .phb .rolltable1 h2 + table thead th {
   	margin-top:0;
   	padding-top:0;
   }
   
-  .page .rolltable1 h2  {
+  .phb .rolltable1 h2  {
   	line-height:1.5em;
  
   }
@@ -263,27 +264,27 @@ Note, there are nested css comments here, and if included in the brew, the space
   
   /* Table Variations  */
   
-  .page .alternating1 table tbody tr:nth-child(2n+1) {
+  .phb .alternating1 table tbody tr:nth-child(2n+1) {
   	background-color:var(--table-row-color);
   }
   
-  .page .alternating2 table tbody tr:nth-child(4n+1),.page .alternating2 table tbody tr:nth-child(4n+2) {
+  .phb .alternating2 table tbody tr:nth-child(4n+1),.phb .alternating2 table tbody tr:nth-child(4n+2) {
   	background-color:var(--table-row-color);
   }
   
-  .page .alternating3 table tbody tr:nth-child(6n+1),.page .alternating3 table tbody tr:nth-child(6n+2),.page .alternating3 table tbody tr:nth-child(6n+3) {
+  .phb .alternating3 table tbody tr:nth-child(6n+1),.phb .alternating3 table tbody tr:nth-child(6n+2),.phb .alternating3 table tbody tr:nth-child(6n+3) {
   	background-color:var(--table-row-color);
   }
   
-  .page .alternating4 table tbody tr:nth-child(8n+1),.page .alternating4 table tbody tr:nth-child(8n+2),.page .alternating4 table tbody tr:nth-child(8n+3),.page .alternating4 table tbody tr:nth-child(8n+4) {
+  .phb .alternating4 table tbody tr:nth-child(8n+1),.phb .alternating4 table tbody tr:nth-child(8n+2),.phb .alternating4 table tbody tr:nth-child(8n+3),.phb .alternating4 table tbody tr:nth-child(8n+4) {
   	background-color:var(--table-row-color);
   }
   
-  .page .alternating5 table tbody tr:nth-child(10n+1),.page .alternating5 table tbody tr:nth-child(10n+2),.page .alternating5 table tbody tr:nth-child(10n+3),.page .alternating5 table tbody tr:nth-child(10n+4),.page .alternating5 table tbody tr:nth-child(10n+5) {
+  .phb .alternating5 table tbody tr:nth-child(10n+1),.phb .alternating5 table tbody tr:nth-child(10n+2),.phb .alternating5 table tbody tr:nth-child(10n+3),.phb .alternating5 table tbody tr:nth-child(10n+4),.phb .alternating5 table tbody tr:nth-child(10n+5) {
   	background-color:var(--table-row-color);
   }
   
-  .page .alternating6 table tbody tr:nth-child(12n+1),.page .alternating6 table tbody tr:nth-child(12n+2),.page .alternating6 table tbody tr:nth-child(12n+3),.page .alternating6 table tbody tr:nth-child(12n+4),.page .alternating6 table tbody tr:nth-child(12n+5),.page .alternating6 table tbody tr:nth-child(12n+6) {
+  .phb .alternating6 table tbody tr:nth-child(12n+1),.phb .alternating6 table tbody tr:nth-child(12n+2),.phb .alternating6 table tbody tr:nth-child(12n+3),.phb .alternating6 table tbody tr:nth-child(12n+4),.phb .alternating6 table tbody tr:nth-child(12n+5),.phb .alternating6 table tbody tr:nth-child(12n+6) {
   	background-color:var(--table-row-color);
   }
  
