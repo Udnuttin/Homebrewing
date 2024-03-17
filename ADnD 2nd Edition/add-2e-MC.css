@@ -74,6 +74,7 @@ Note, there are nested css comments here, and if included in the brew, the space
    /* COVER PAGE  */
   
   .phb .cover ~ h1 {
+	border:none;
   	text-align:center;
   	font-size:39px;
   	color:white;
