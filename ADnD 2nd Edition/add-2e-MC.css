@@ -79,7 +79,7 @@ Note, there are nested css comments here, and if included in the brew, the space
   	color:white;
   	width:75%;
   	margin:auto auto;
-	text-shadow: 3px 3px 3px;
+	text-shadow: 0 0 3px var(--main-color);
   }
 
   /* TEXT */
