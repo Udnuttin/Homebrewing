@@ -76,13 +76,13 @@ Note, there are nested css comments here, and if included in the brew, the space
   .phb .cover ~ h1 {
   	border:none;
   	text-align:center;
-  	font-size:42px;
+  	font-size:39px;
   	color:white;
   	width:75%;
   	margin:auto auto;
   	background:var(--main-color);
   	border-radius:27px;
-  	border:none;
+  	border:9px double white;
   }
 
   /* TEXT */
