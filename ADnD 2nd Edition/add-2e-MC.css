@@ -62,7 +62,7 @@ Note, there are nested css comments here, and if included in the brew, the space
   	height:100%;
   	mix-blend-mode:darken;
   	background-color:var(--punch-hole-color);
-  	transform:scaleX(1);
+  	transform:scaleX(-1);
   }
   
   .phb:nth-of-type(2n):after {
