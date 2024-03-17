@@ -78,11 +78,11 @@ Note, there are nested css comments here, and if included in the brew, the space
   	text-align:center;
   	font-size:42px;
   	color:white;
-  	width:auto;
+  	width:75%;
   	margin:auto auto;
   	background:var(--main-color);
   	border-radius:27px;
-  	border:6px double white;
+  	border:none;
   }
 
   /* TEXT */
