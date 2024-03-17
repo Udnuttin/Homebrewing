@@ -233,7 +233,7 @@ Note, there are nested css comments here, and if included in the brew, the space
   .phb .stats table tbody tr td:nth-of-type(1) {
   	text-transform:uppercase;
   	font-weight:bold;
-  	width:240px;
+  	width:230px;
   }
   
   .phb .stats table tbody td:nth-of-type(1):after {
