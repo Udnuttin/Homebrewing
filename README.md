@@ -1,3 +1,3 @@
 # Homebrewing
 
-This Is My Fisrt Repo
+This Is My First Repo
